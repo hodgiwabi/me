@@ -1,0 +1,25 @@
+baseURL: "http://tobyhodges.me/"
+languageCode: "en-us"
+title: "Toby Hodges"
+theme: "PaperMod"
+params:
+  author: "Toby Hodges"
+  homeInfoParams:
+    Title: "Hi, I'm Toby."
+    Content: "Welcome to my personal site!"
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/hodgiwabi"
+    - name: "sourcehut"
+      url: "https://sr.ht/~hodgiwabi/"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/tobyhodges"
+    - name: "email"
+      url: "mailto:hello@tobyhodges.me"
+  ShowBreadCrumbs: true
+
+# outputs:
+#   home:
+#     - HTML
+#     - RSS
+#     - JSON
