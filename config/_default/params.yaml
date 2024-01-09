@@ -1,0 +1,15 @@
+author: "Toby Hodges"
+homeInfoParams:
+  Title: "👋 Hi, I'm Toby."
+  Content: "Welcome to my personal site!"
+socialIcons:
+  - name: "github"
+    url: "https://github.com/hodgiwabi"
+  - name: "sourcehut"
+    url: "https://sr.ht/~hodgiwabi/"
+  - name: "linkedin"
+    url: "https://www.linkedin.com/in/tobyhodges"
+  - name: "email"
+    url: "mailto:hello@tobyhodges.me"
+ShowBreadCrumbs: true
+ShowReadingTime: true

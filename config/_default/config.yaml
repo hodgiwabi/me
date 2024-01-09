@@ -1,0 +1,6 @@
+baseURL: "http://tobyhodges.me/"
+languageCode: "en-us"
+title: "Toby Hodges"
+theme: "PaperMod"
+enableEmoji: true
+enableInlineShortcodes: true
