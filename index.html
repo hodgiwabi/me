@@ -3,89 +3,157 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="main.css" />
-        <link rel="stylesheet" href="https://use.typekit.net/nrz2ewx.css" />
-        <title>Toby Hodges</title>
+        <title>Simple Landing Page</title>
+        <style>
+            :root {
+                --primary-color: #dad2dc;
+                --base-size: 1.2rem;
+            }
+
+            body {
+                font-family: Helvetica, Arial, sans-serif;
+                background-color: var(--primary-color);
+                margin: 0;
+                padding: 3rem;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .card {
+                background-color: white;
+                box-shadow: 0.5rem 0.5rem 0 rgba(0, 0, 0, 1);
+                border: 0.1rem solid #000;
+                padding: 1.2rem;
+                will-change: filter;
+                display: block;
+                margin-bottom: 3rem;
+                line-height: 1.4;
+                width: 100%;
+                font-size: clamp(1.1rem, 4.9cqw, 1.4rem);
+                box-sizing: border-box;
+            }
+
+            a {
+                text-decoration: underline;
+                color: #000;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                max-width: 1400px;
+                margin: 0 auto;
+            }
+
+            .column-wrapper {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 3rem;
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            .column {
+                container-type: inline-size;
+            }
+        </style>
     </head>
     <body>
-        <header>
-            <h1>Hello. I'm Toby Hodges.</h1>
-        </header>
+        <div class="content">
+            <div class="column-wrapper">
+                <div class="column">
+                    <p class="card">
+                        <strong>Hi, I'm Toby Hodges</strong>. Nice to meet you.
+                    </p>
+                    <p class="card">
+                        <strong>I build software</strong>
+                        because I believe in people's ability to use it as a
+                        tool to help design and make better lives for people,
+                        equitably. My aspirations are to create software that
+                        can improve the efficiency and effectiveness of urban
+                        design, and can provide easy-to-use tools to increase
+                        the sustainability and equity of the places it helps to
+                        create.
+                    </p>
+                    <p class="card">
+                        <strong>This site is a work in progress</strong>, but if
+                        you check back soon, you'll find more content. In the
+                        meantime, feel free to continue reading about my work
+                        and who I am. If you want to reach out, please use the
+                        contact card below.
+                    </p>
+                    <p class="card">
+                        <strong>Contact Me</strong>:
+                        <a href="mailto:hello@tobyhodges.me">Email</a>
+                        <a href="https://linkedin.com/in/tobyhodges"
+                            >LinkedIn</a
+                        >
+                    </p>
+                </div>
 
-        <main>
-            <section class="about">
-                <h2>Why create software?</h2>
-                <p>
-                    I build software because I believe in people's ability to
-                    use it as a tool to help plan, design, and create better
-                    lives for people.
-                </p>
-                <h3><em>To increase quality of life for all.</em></h3>
-                <p>
-                    Or it's only to provide for me and my family and anything
-                    else I tell myself is a coping mechanism for the suffering
-                    incurred by the system we live in. There's probably some
-                    truth to that.
-                </p>
-                <br />
-                <p>
-                    I work as a senior software engineer for Autodesk in
-                    Portland, Oregon. Before that, I worked as a software
-                    engineer for Kaiser Permanente.
-                </p>
-                <p>
-                    There are a few things that I consider my passions, though
-                    my friends and family would tell you that I'm passionate
-                    about everything. My penultimate desire is to create a
-                    better world. Please, ask me about it. It is my belief that
-                    to do so, we must intentionally plan, design, and make
-                    spaces that are equitable for people of every background and
-                    that provide means of living sustainably. I want to build
-                    software that supports this effort, which is why I'm working
-                    to attain a Graduate Certificate in Urban Design from
-                    Portland State University. It's why I have spent many days
-                    reading and attending lectures and workshops to hear from
-                    both the dominant voices and those largely unheard.
-                </p>
-            </section>
+                <div class="column">
+                    <p class="card">
+                        <strong>I work at Autodesk</strong> as a Senior Software
+                        Engineer. There, I build the platform that enables
+                        thousands of developers to deploy, manage, and observe
+                        their applications. One of my stand-out projects is
+                        creating a vendor-agnostic Resilience API Group by
+                        extending Kubernetes on our internal control plane. The
+                        API Group, which includes SLO, SLI, Datasource, and
+                        Alert Policy, Condition, and Notification Target APIs,
+                        follows
+                        <a href="https://github.com/OpenSLO/OpenSLO">
+                            open conventions</a
+                        >
+                        but adds a
+                        <a
+                            href="https://en.wikipedia.org/wiki/Strategy_pattern"
+                        >
+                            provider abstraction</a
+                        >
+                        for our customers to be able to utilize any
+                        observability vendor offered by the platform without
+                        modifying their GitOps configurations. I am also a
+                        maintainer for our innersource internal control plane.
+                    </p>
+                    <p class="card">
+                        <strong>Previous to my current work</strong>, from 2019
+                        – 2022 I worked as an Infrastructure Engineer at Kaiser
+                        Permanente. There, I managed the cloud infrastructure
+                        for the KP Membership Connect platform.
+                    </p>
+                </div>
 
-            <section class="ask-me">
-                <h2>Ask Me About</h2>
-                <ul>
-                    <li>
-                        <b>Platform Engineering</b>—exploration of scale on the
-                        dimensions of people and productivity.
-                    </li>
-                    <li>
-                        <b>Design</b>—software, architecture, web, urban,
-                        graphic, experience, type... You name it. I'm into it.
-                    </li>
-                    <li>
-                        <b>Transportation</b>—trains and buses and bikes, oh my!
-                    </li>
-                </ul>
-            </section>
-
-            <section class="contact">
-                <h2>Contact Me</h2>
-                <p>
-                    by sending me an email at
-                    <a href="mailto:hello@tobyhodges.me">hello@tobyhodges.me</a
-                    >.
-                </p>
-                <p>
-                    You can also find me on
-                    <a href="https://linkedin.com/in/tobyhodges">LinkedIn</a>
-                    or
-                    <a href="https://bsky.app/profile/hodgiwabi.bsky.social"
-                        >BlueSky</a
-                    >.
-                </p>
-            </section>
-        </main>
-
-        <footer>
-            <p>© 2024–2025 Toby Hodges</p>
-        </footer>
+                <div class="column">
+                    <p class="card">
+                        <strong>I went to school</strong> at Oregon State
+                        University, where I earned a Bachelor of Science in
+                        Computer Science in 2020. My favorite course was
+                        Programming Languages, but the best part of college was
+                        meeting people that became a new community for me. It
+                        was a powerful lesson in the importance of community
+                        building and collaboration.
+                    </p>
+                    <p class="card">
+                        <strong>I was recently accepted</strong> to the Portland
+                        State University Urban Design Graduate Certificate
+                        Program. I plan on attending the program in the Winter
+                        of 2025 – 2026. I am particularly excited about this
+                        opportunity, because it will connect my software
+                        engineering expertise with my desire to help create
+                        wonderful spaces.
+                    </p>
+                    <p class="card">
+                        <strong>I carry multiple certifications</strong>,
+                        including Certified Kubernetes Application Developer
+                        (CKAD), Certified ArgoCD Project Associate (CAPA), and
+                        Prometheus Certified Associate (PCA). I earned these in
+                        late 2024 – early 2025, and I plan to keep them
+                        up-to-date.
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
